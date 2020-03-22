@@ -4,7 +4,7 @@ solidarisch. anonym. sicher.
 ![logo_small](docs/images/logo_small.png)
 
 ## Zweck
-Es soll im Rahmen des Hackathon #WirVsVirus (#WeVsVirus) (2020) eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt (#flattenthecurve #riskgoups). 
+Es soll im Rahmen des Hackathon [#WirVsVirus](https://wirvsvirushackathon.org/) 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt (#flattenthecurve #riskgoups). 
 
 ## Unsere Idee
 Wir möchten über Mobiltelefone ermitteln, ob ein Anwender sich eine bestimmte Zeit in einer bestimmten Nähe zu einem mit COVID-19 infiziertem Menschen aufgehalten hat.
