@@ -4,12 +4,12 @@ solidarisch. anonym. sicher.
 ![logo_small](docs/images/logo_small.png)
 
 ## Zweck
-Es soll im Rahmen des Hackathon [#WirVsVirus](https://wirvsvirushackathon.org/) 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt (#flattenthecurve #riskgoups). 
+Es soll im Rahmen des Hackathon [#WirVsVirus](https://wirvsvirushackathon.org/) 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt. #flattenthecurve #riskgoups 
 
 ## Unsere Idee
-Wir möchten über Mobiltelefone ermitteln, ob ein Anwender sich eine bestimmte Zeit in einer bestimmten Nähe zu einem mit COVID-19 infiziertem Menschen aufgehalten hat.
+Wir möchten über Mobiltelefone ermitteln, ob ein Anwender sich eine bestimmte Zeit in einer bestimmten Nähe zu einem mit SARS-CoV-2 infizierten Menschen aufgehalten hat.
 
-Laut Empfehlung sollte die Entfernung mehr als 2 Meter und nicht länger als 10 MInuten erfolgen. Befindet man sich eine längere Zeit oder dichter an einer infizierten Person, besteht die Möglichkeit, sich ebenfalls zu infizieren.
+Laut Empfehlung sollte die Entfernung mehr als 2 Meter und nicht länger als 15 Minuten erfolgen. Befindet man sich eine längere Zeit oder dichter an einer infizierten Person, besteht die Möglichkeit, sich ebenfalls zu infizieren.
 
 ![risk](docs/images/risk.png)
 
@@ -17,7 +17,7 @@ Mit der von uns vorgesehenen Lösung werden von einem Gerät alle eindeutigen Ke
 
 Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese Information erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.
 
-Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Konatkt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.
+Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Kontakt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.
 
 ## Features
 - Erfassung einer eindeutigen anonymen ID des Geräts
