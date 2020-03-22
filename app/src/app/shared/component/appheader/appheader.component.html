@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start" *ngIf="showBackButton">
+            <ion-button (click)="back()">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <img class="icon" [src]="'/assets/icon.png'" *ngIf="!showBackButton">
+        <div class="title">{{title}}</div>
+        <div class="subtitle">{{subtitle}}</div>
+    </ion-toolbar>
+</ion-header>

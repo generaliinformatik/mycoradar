@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    ion-checkbox {
+      margin-right: 20px;
+    }
+  }
+}
+
+
+.button {
+  display: flex;
+  margin: 20px;
+}
+

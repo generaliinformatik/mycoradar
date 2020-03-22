@@ -1,0 +1,13 @@
+.tab {
+  background-color: #7D0721;
+  color: white;
+
+  &.tab-selected {
+    border-bottom: 3px solid #C03400;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

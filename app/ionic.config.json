@@ -1,0 +1,7 @@
+{
+  "name": "personal_corona_radar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

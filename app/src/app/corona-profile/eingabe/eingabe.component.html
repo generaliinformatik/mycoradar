@@ -1,0 +1,18 @@
+<app-appheader [title]="'Ihr Corona Profil'" [subtitle]="'Übersicht über die Funktionen'"></app-appheader>
+<ion-content fullscreen>
+    <ion-list>
+
+        <ion-item [routerLink]="['./test']">
+            <ion-text>
+                <h5>Corona Selbsteinschätzung</h5>
+                <p>Finden Sie heraus, ob Sie zur Risikogruppe von Corona gehören und ob Handlungsbedarf besteht.</p>
+            </ion-text>
+        </ion-item>
+
+        <ion-item [routerLink]="['./ergebnis']">
+            <ion-text>
+                <h5>Corona Testergebnis</h5>
+                <p>Geben Sie hier an, ob und wann sie auf Corona getestet wurden.</p></ion-text>
+        </ion-item>
+    </ion-list>
+</ion-content>

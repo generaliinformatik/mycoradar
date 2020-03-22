@@ -1,0 +1,15 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+ion-card {
+  padding: 10px
+}
+
+ion-icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding-right: 20px;
+  color: var(--ion-color-primary);
+}

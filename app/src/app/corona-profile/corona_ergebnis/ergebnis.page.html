@@ -1,0 +1,16 @@
+<app-appheader [title]="'Corona Status'"
+               [subtitle]="'Geben Sie hier an, ob und wann Sie auf Corona getestet wurden'"
+               [showBackButton]="true"></app-appheader>
+<ion-content [fullscreen]="true" class="content">
+    <form [formGroup]="form">
+        <ion-card class="input">
+            <ion-checkbox formControlName="positiv" (ionChange)="hinweis()"></ion-checkbox>
+            <ion-label>Mein Testergebnis war positiv</ion-label>
+        </ion-card>
+        <ion-card>
+            <ion-calendar formControlName="date" [options]="{from: dateFrom}"></ion-calendar>
+        </ion-card>
+    </form>
+    <ion-button class="button" (click)="save()" [disabled]="!form.valid">Ergebnis absenden</ion-button>
+</ion-content>
+
