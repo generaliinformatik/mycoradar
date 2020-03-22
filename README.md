@@ -1,6 +1,6 @@
-```
+
 Diese Seite ist derzeit nur in deutscher Sprache formuliert, da es sich bei dem Hackathon um eine VEranstaltung des Bundes handelt. Eine Übersetung ist englisch in während oder kurz nach dem Hackathon vorgesehen
-```
+
 
 # my co:radar
 anonym. solidarisch. sicher.
@@ -10,21 +10,24 @@ Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anon
 ![logo_small](docs/images/logo_small.png)
 
 ## Zweck
-Es wurde im Rahmen des Hackathon #WirVsVirus (#WeVsVirus) in 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt (#flattenthecurve #riskgoups). Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2 (#flatenthecurve), damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
+Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt.  
+
+Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
 
 ## Unsere Idee
-Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein Anwender gemäß den Richtwerten vom Robert-Koch-Institut (RKI) zu lange und zu dicht an einer mit SARS-CoV-2 infizierten Person aufgehalten hat.   
+Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein Anwender gemäß den Richtwerten des [Robert-Koch-Instituts (RKI)](https://www.rki.de/) zu lange und zu dicht bei einer mit SARS-CoV-2 infizierten Person aufgehalten hat.  
 
-Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:   
+Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:  
 
 - mindestens zwei Meter Abstand zu anderen Personen halten und   
-- nicht länger als 15 Minuten in der Nähe von infizierten Personen aufhalten.   
+- nicht länger als 15 Minuten in der Nähe von infizierten Personen aufhalten.  
 
-Kommt man infizierten Personen für einen längeren Zeitraum dicher, besteht möglicherweise das Risiko einer Ansteckung für den Anwender.  
+Ansonsten könnte die Möglichkeit einer Ansteckung für den Anwender bestehen.  
 
 ![risk](docs/images/contactrisk.png)
 
 ## Technische Umsetzung  
+
 Mit der von uns vorgesehenen Lösung werden von den eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.
 
 Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.
