@@ -3,13 +3,18 @@ Diese Seite ist derzeit nur in deutscher Sprache formuliert, da es sich bei dem 
 ```
 
 # my co:radar
+<<<<<<< HEAD
 anonym. solidarisch. sicher
 
 Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
+=======
+anonym. solidarisch. sicher.
+>>>>>>> 1d966ba67e93e89614002f6d0be4dd392e2cd885
 
 ![logo_small](docs/images/logo_small.png)
 
 ## Zweck
+<<<<<<< HEAD
 Es wurde im Rahmen des Hackathon #WirVsVirus (#WeVsVirus) in 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt (#flattenthecurve #riskgoups). Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2 (#flatenthecurve), damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
 
 ## Unsere Idee
@@ -21,6 +26,14 @@ Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:
 - nicht länger als 15 Minuten in der Nähe von infizierten Personen aufhalten.   
 
 Kommt man infizierten Personen für einen längeren Zeitraum dicher, besteht möglicherweise das Risiko einer Ansteckung für den Anwender.  
+=======
+Es soll im Rahmen des Hackathon [#WirVsVirus](https://wirvsvirushackathon.org/) 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt. #flattenthecurve #riskgoups 
+
+## Unsere Idee
+Wir möchten über Mobiltelefone ermitteln, ob ein Anwender sich eine bestimmte Zeit in einer bestimmten Nähe zu einem mit SARS-CoV-2 infizierten Menschen aufgehalten hat.
+
+Laut Empfehlung sollte die Entfernung mehr als 2 Meter und nicht länger als 15 Minuten erfolgen. Befindet man sich eine längere Zeit oder dichter an einer infizierten Person, besteht die Möglichkeit, sich ebenfalls zu infizieren.
+>>>>>>> 1d966ba67e93e89614002f6d0be4dd392e2cd885
 
 ![risk](docs/images/risk.png)
 
@@ -64,4 +77,8 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 ## Der Datenschutz
 
 Die Lösung ermittelt eine eindeutige ID des Geräts und nutzt diese zum Austauch mit anderen Geräten.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d966ba67e93e89614002f6d0be4dd392e2cd885
 ...
