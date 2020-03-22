@@ -15,7 +15,7 @@ Laut Empfehlung sollte die Entfernung mehr als 2 Meter und nicht länger als 10 
 
 Mit der von uns vorgesehenen Lösung werden von einem Gerät alle eindeutigen Kennzeichen (IDs) der Geräte in der Umgebung gescannt. Von einem zentralen Server-Dienst werden als infektiös bekannte IDs gelesen und der Anwender vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.
 
-Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese INformation erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.
+Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese Information erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.
 
 Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Konatkt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.
 
@@ -27,8 +27,8 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 
 ## Voraussetzung
 - Smartphones
-- Einsatz der Anwendung "my co.radar" auf den betroffenen Endgeräten
-- Einsatz des BAckends für den Austausch der als infektiös identifizierten Anwender
+- Einsatz der Anwendung "my co:radar" auf den betroffenen Endgeräten
+- Einsatz des Backends für den Austausch der als infektiös identifizierten Anwender
 - Internet-Verbindung zur Datensynchronisierung
 
 ## Die Technik:
