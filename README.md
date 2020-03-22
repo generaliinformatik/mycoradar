@@ -1,5 +1,5 @@
 
-Diese Seite ist derzeit nur in deutscher Sprache formuliert, da es sich bei dem Hackathon um eine VEranstaltung des Bundes handelt. Eine Übersetung ist englisch in während oder kurz nach dem Hackathon vorgesehen
+Diese Seite ist derzeit nur in deutscher Sprache formuliert, da es sich bei dem Hackathon um eine Veranstaltung des Bundes handelt. Eine Übersetzung ist Englisch in während oder kurz nach dem Hackathon vorgesehen
 
 
 # my co:radar
@@ -28,7 +28,7 @@ Ansonsten könnte die Möglichkeit einer Ansteckung für den Anwender bestehen.
 
 ## Technische Umsetzung  
 
-Mit der von uns vorgesehenen Lösung werden von den eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.
+Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.
 
 Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.
 
@@ -39,7 +39,7 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 ## Features
 - Erfassung einer eindeutigen anonymen ID des Geräts
 - keine Erfassung von personengebundenen Informationen
-- Übertragung der Informationen über verschlüselte Protokolle (in Arbeit)
+- Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)
 - ...
 
 ## Voraussetzung
