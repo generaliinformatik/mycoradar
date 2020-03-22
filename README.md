@@ -1,5 +1,5 @@
 # my co:radar
-solidarisch. anonym. sicher.
+anonym. solidarisch. sicher.
 
 ![logo_small](docs/images/logo_small.png)
 
