@@ -49,20 +49,10 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 - Internet-Verbindung zur Datensynchronisierung
 
 ## Die Technik:
-**App**  
 - Angular  
 - Springboot  
 - REST  
 - JSON  
-
-**Design**  
-- Adobe Spark Post  
-- proto.io  
-
-**Kommunikation**  
-- Slack
-- menti.com
-- Zoom
 
 ## Der Datenschutz
 
