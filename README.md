@@ -22,7 +22,7 @@ Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:
 
 Kommt man infizierten Personen für einen längeren Zeitraum dicher, besteht möglicherweise das Risiko einer Ansteckung für den Anwender.  
 
-![risk](docs/images/risk.png)
+![risk](docs/images/contactrisk.png)
 
 ## Technische Umsetzung  
 Mit der von uns vorgesehenen Lösung werden von den eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.
