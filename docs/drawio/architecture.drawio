@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-23T06:48:06.654Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="fgkEy8tWdaAdea2nMTHQ" version="12.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-03-23T07:16:35.098Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="QhhIFb-J4VpbPH5fuSPC" version="12.8.8" type="github">
   <diagram id="ToM_NKcduJjBZOBMQTen" name="Page-1">
     <mxGraphModel dx="1078" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -49,7 +49,7 @@
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="570" y="136" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-20" value="Backend Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#E6E6E6;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-20" value="Backend Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="610" y="149" width="40" height="34" as="geometry" />
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-21" value="REST API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;rotation=90;" vertex="1" parent="1">
@@ -58,19 +58,19 @@
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-24" value="" style="shape=datastore;whiteSpace=wrap;html=1;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="600" y="250" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-26" value="local storage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#E6E6E6;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-26" value="local storage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="190" y="322" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-27" value="centralizedstorage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="610" y="318" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-29" value="anonymized DeviceID, infection status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-29" value="anonymized DeviceIDs, own infection status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="260" y="119" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-31" value="anonymized DeviceID, infection status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-31" value="anonymized DeviceIDs, other infection status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="270" y="176" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-34" value="DeviceID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-34" value="DeviceIDs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="80" y="120" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-35" value="" style="endArrow=classic;html=1;strokeWidth=2;fontColor=#E6E6E6;strokeColor=#66B2FF;" edge="1" parent="1">
@@ -79,7 +79,7 @@
             <mxPoint x="190" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-15" value="Cloud" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;fontColor=#E6E6E6;" vertex="1" parent="1">
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-15" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="390" y="136" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-30" value="" style="endArrow=classic;html=1;strokeWidth=2;fontColor=#E6E6E6;strokeColor=#66B2FF;" edge="1" parent="1">
@@ -102,6 +102,12 @@
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-40" value="centralized service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="590" y="20" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-44" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/kitchen-appliances-computers-and-electronics/32/Appliances-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="46" y="196" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-45" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="183" width="50" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
