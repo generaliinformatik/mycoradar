@@ -1,0 +1,1 @@
+SVG files for documentation
