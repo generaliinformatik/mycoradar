@@ -30,62 +30,70 @@ Hinweis: Sollte ein zuvor positiv getesteter Anwender wieder genesen, kann der S
 
 ## Technische Umsetzung  
 
-Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.
+Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.  
 
-Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.
+Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.  
 
-Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese Information erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.
+Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese Information erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.  
 
-![Architektur](docs/svg/architecture.svg)
+![Architektur](docs/images/architecture.png)
 
-Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Kontakt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.
+Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Kontakt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.  
 
 ## Implementierte Features
-- Erfassung einer eindeutigen anonymen ID des Geräts
-- keine Erfassung von personengebundenen Informationen
-- Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)
-- ...
+- Erfassung einer eindeutigen anonymen ID des Geräts  
+- keine Erfassung von personengebundenen Informationen  
+- Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)  
+- ...  
 
-(noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben))
+(noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben))  
 
 ## Technische Voraussetzung
 ### Komponenten
 ### Client
 - mindestens zwei **Smartphones** (derzeit Android)
-- **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen)
+- **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen).  
 
-### Server
-- Server per Internet erreichbar
-- Docker
-- Einsatz der **Backend-Komponente** für den Austausch der als infektiös identifizierten Anwender (Docker Image)
-- **Internet-Verbindung** zur Datensynchronisierung
+### Server  
+- Server per Internet erreichbar  
+- Docker  
+- Einsatz der **Backend-Komponente** für den Austausch der als infektiös identifizierten Anwender (Docker Image)  
+- **Internet-Verbindung** zur Datensynchronisierung  
 
-### Programmiersprachen, Frameworks etc.
+### Programmiersprachen, Frameworks etc.  
 - Angular  
 - Springboot  
 - REST  
 - JSON  
 - Docker  
 
-## Datenschutz
+## Datenschutz  
 
-Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und nutzt diese anonymisierte Information zum Abgleich der Daten von anderen Geräten.
+Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und nutzt diese anonymisierte Information zum Abgleich der Daten von anderen Geräten.  
 
-Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen(!!!)**, werden **anonymisiert verarbeitet und lokal gespeichert**.
+Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen(!!!)**, werden **anonymisiert verarbeitet und lokal gespeichert**.  
 
-In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermiteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!** 
+In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermiteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**  
 
-Die Speicherung von Geräte-IDs auf den lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz)begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.
+Die Speicherung von Geräte-IDs auf den lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz)begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
 
-Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokale aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.
+Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokale aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.  
 
 Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anwender noch der Server-Betreiber eine Verbindung zwischen Gerät (entspricht in vielen Fällen dem Nutzer) und der verarbeiteten Kennung herstellen. Hinweis: Für einen produktiven Einsatz ist das Verschlüsselungsverfahren und die Verarbeitung zu prüfen und durch den Datenschutzbeauftragten zu bestätigen!)  
 
 # Ausblick
 
-Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werde. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagement der Teilnehmer beabsichtigt. EIne Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiuterentwicklungen im Rahmen von Pull Requests.
+Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werde. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagement der Teilnehmer beabsichtigt. EIne Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiuterentwicklungen im Rahmen von Pull Requests.  
 
 ## nicht implementierte Funktionen
-- Löschen von Kennungen inklusive Synchronsiation umsetzen
-- Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten
+- Löschen von Kennungen inklusive Synchronsiation umsetzen  
+- Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten  
 - ...
+
+# Lizenz
+
+Unter der Open Source-Lizenz MIT veröffentlicht.
+
+Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menscheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.  
+
+Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in unseren Upstream.  
