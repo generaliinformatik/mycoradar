@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-23T07:16:49.194Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="ble5XmEBq3A9GqhB9p8b" version="12.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-03-23T08:09:16.030Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="z2zSjQW0cehu9lrlhnww" version="12.8.8" type="github">
   <diagram id="ToM_NKcduJjBZOBMQTen" name="Page-1">
     <mxGraphModel dx="1078" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,9 +33,6 @@
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-5" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-07-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="190" y="120" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-6" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/vector-brand-logos/40/Docker-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
-          <mxGeometry x="510" y="40" width="70" height="70" as="geometry" />
         </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-7" value="" style="shape=datastore;whiteSpace=wrap;html=1;fontColor=#E6E6E6;" vertex="1" parent="1">
           <mxGeometry x="200" y="250" width="60" height="60" as="geometry" />
@@ -103,11 +100,17 @@
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-40" value="centralized service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="590" y="20" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-44" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/kitchen-appliances-computers-and-electronics/32/Appliances-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="46" y="196" width="64" height="64" as="geometry" />
-        </mxCell>
         <mxCell id="g15ZFV5F6ZTncp_oFKHQ-45" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="10" y="183" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-46" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="45" y="200" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-47" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-06-128.png;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="196" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="g15ZFV5F6ZTncp_oFKHQ-49" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Docker.svg;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="60" width="50" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
