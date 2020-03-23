@@ -10,9 +10,9 @@ Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anon
 ![logo_small](docs/images/logo_small.png)
 
 ## Zweck
-Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt werden, die bei der Eindämmung der Krankheit COVID-19 unterstützt.  
+Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt, die bei der Eindämmung der Krankheit COVID-19 unterstützt.  
 
-Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
+Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform unter den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
 
 ## Unsere Idee
 Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein Anwender gemäß den Richtwerten des [Robert-Koch-Instituts (RKI)](https://www.rki.de/) zu lange und zu dicht bei einer mit SARS-CoV-2 infizierten Person aufgehalten hat.  
@@ -30,7 +30,7 @@ Hinweis: Sollte ein zuvor positiv getesteter Anwender wieder genesen, kann der S
 
 ## Technische Umsetzung  
 
-Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung gespeichert.  
+Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung lokal gespeichert.  
 
 Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.  
 
@@ -46,7 +46,7 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 - Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)  
 - ...  
 
-(noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben))  
+(Noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben)  
 
 ## Technische Voraussetzung
 ### Komponenten
@@ -56,7 +56,7 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 
 ### Server  
 - Server per Internet erreichbar  
-- Docker  
+- docker  
 - Einsatz der **Backend-Komponente** für den Austausch der als infektiös identifizierten Anwender (Docker Image)  
 - **Internet-Verbindung** zur Datensynchronisierung  
 
@@ -75,15 +75,15 @@ Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des B
 
 In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermiteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**  
 
-Die Speicherung von Geräte-IDs auf den lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz)begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
+Die Speicherung von Geräte-IDs auf den lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz) begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
 
-Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokale aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.  
+Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokal aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.  
 
-Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anwender noch der Server-Betreiber eine Verbindung zwischen Gerät (entspricht in vielen Fällen dem Nutzer) und der verarbeiteten Kennung herstellen. Hinweis: Für einen produktiven Einsatz ist das Verschlüsselungsverfahren und die Verarbeitung zu prüfen und durch den Datenschutzbeauftragten zu bestätigen!)  
+Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anwender noch der Server-Betreiber eine Verbindung zwischen Gerät (entspricht in vielen Fällen dem Nutzer) und der verarbeiteten Kennung herstellen. Hinweis: Für einen produktiven Einsatz ist das Verschlüsselungsverfahren und die Verarbeitung zu prüfen und durch den Datenschutzbeauftragten zu bestätigen!  
 
 # Ausblick
 
-Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werde. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagement der Teilnehmer beabsichtigt. EIne Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiuterentwicklungen im Rahmen von Pull Requests.  
+Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werden. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagements der Teilnehmer beabsichtigt. Eine Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiterentwicklungen im Rahmen von Pull Requests.  
 
 ## nicht implementierte Funktionen
 - Löschen von Kennungen inklusive Synchronsiation umsetzen  
