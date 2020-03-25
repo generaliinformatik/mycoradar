@@ -9,7 +9,7 @@ anonym. solidarisch. sicher.
 
 Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
 
-# Entwicklungs Stand (development status)
+# Entwicklungsstand (development status)
 Prototyp, Alpha
 
 ## Zweck
@@ -49,26 +49,26 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 - Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)  
 - ...  
 
-(Noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben)  
+(Noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere Ausbaustufen nach dem Hackathon beschrieben)  
 
 # Technische Voraussetzung
 ## Komponenten
 ### Client
-- mindestens zwei **Smartphones** (derzeit Android)
+- mindestens zwei **Smartphones** (derzeit [Android](https://www.android.com/))
 - **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen).  
 
 ### Server  
 - Server per Internet erreichbar  
-- docker  
+- [Docker](https://www.docker.com)  
 - Einsatz der **Backend-Komponente** für den Austausch der als infektiös identifizierten Anwender (Docker Image)  
 - **Internet-Verbindung** zur Datensynchronisierung  
 
 ### Programmiersprachen, Frameworks etc.  
-- Angular  
-- Springboot  
+- [Angular](https://angular.io)  
+- [Springboot](https://spring.io/)  
 - REST  
-- JSON  
-- Docker  
+- [JSON](https://www.json.org/)  
+- [Docker](https://www.docker.com)  
 
 # Datenschutz  
 
@@ -76,9 +76,9 @@ Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und
 
 Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen(!!!)**, werden **anonymisiert verarbeitet und lokal gespeichert**.  
 
-In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermiteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**  
+In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermitteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**  
 
-Die Speicherung von Geräte-IDs auf den lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz) begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
+Die Speicherung von Geräte-IDs auf dem lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz) begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
 
 Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokal aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.  
 
@@ -89,7 +89,7 @@ Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anw
 Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werden. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagements der Teilnehmer beabsichtigt. Eine Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiterentwicklungen im Rahmen von Pull Requests.  
 
 # nicht implementierte Funktionen  
-- Löschen von Kennungen inklusive Synchronsiation umsetzen  
+- Löschen von Kennungen inklusive Synchronisiation umsetzen  
 - Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten  
 - ...
 
@@ -107,23 +107,25 @@ Wir nutzen [SemVer](http://semver.org/) für die Vergabe von Versionsnummern. F�
 * **Marianne** - *Backend* - tba
 * **Iris** - *Konzeption, Test* - tba
 * **Anna** - *UX, Marketing, Landingpage* - tba
-* **René** - *Github Admin, Video, Kommuniktions-Host* - [rfuehrer](https://github.com/rfuehrfer)
+* **René** - *Github Admin, Video, Kommunikations-Host* - [rfuehrer](https://github.com/rfuehrfer)
 * **Michael** - *Frontend* - tba
 * **Niko** - *Backend* - tba
 * **Oliver** - *Backend* - tba
 * **Claus** - *Konzeption, Feedback* - tba
 * **Stephan** - *Konzeption, Marketing, Feedback* - tba
 * **Stefan** - *Konzeption, Pitch, Feedback* - tba
-* **Björn** - *KOnzeption, Feedback* - tba
+* **Björn** - *Konzeption, Feedback* - tba
 
 Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliinformatik/mycoradar/contributors), die an dem Projekt bisher mitgewirkt haben.
 
 # Lizenz
 
-Dieses Projekt ist unter  MIT Lizenz lizensiert - schaue bitte in die [LICENSE.md](LICENSE.md) für mehr Details.
+Dieses Projekt ist unter MIT Lizenz lizensiert - schaue bitte in die [LICENSE.md](LICENSE.md) für mehr Details.
 
-Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menscheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.  
+Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menschheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.  
 
 Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in diesen Upstream.  
 
-# Bemerkungen
+# Bemerkungen  
+
+tba...
