@@ -1,20 +1,23 @@
 
-**Hinweis:** Diese Seite ist derzeit nur in deutscher Sprache formuliert, da es sich bei dem Hackathon #WirVsVirus um eine Veranstaltung des Bundes handelt. Eine Übersetzung ins Englisch ist während oder kurz nach dem Hackathon vorgesehen
 
+![logo_small](docs/images/logo_small.png)
+
+**NOTE** This page is currently only in German language, as the hackathon #WirVsVirus is an event of the German government. A translation into English is planned.
 
 # my co:radar
 anonym. solidarisch. sicher.
 
 Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
 
-![logo_small](docs/images/logo_small.png)
+# Entwicklungs Stand (development status)
+Prototyp, Alpha
 
 ## Zweck
 Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt, die bei der Eindämmung der Krankheit COVID-19 unterstützt.  
 
 Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform unter den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
 
-## Unsere Idee
+# Unsere Idee
 Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein Anwender gemäß den Richtwerten des [Robert-Koch-Instituts (RKI)](https://www.rki.de/) zu lange und zu dicht bei einer mit SARS-CoV-2 infizierten Person aufgehalten hat.  
 
 Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:  
@@ -28,7 +31,7 @@ Hinweis: Sollte ein zuvor positiv getesteter Anwender wieder genesen, kann der S
 
 ![risk](docs/images/contactrisk.png)
 
-## Technische Umsetzung  
+# Technische Umsetzung  
 
 Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung lokal gespeichert.  
 
@@ -40,7 +43,7 @@ Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden a
 
 Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Kontakt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.  
 
-## Implementierte Features
+# Implementierte Features
 - Erfassung einer eindeutigen anonymen ID des Geräts  
 - keine Erfassung von personengebundenen Informationen  
 - Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)  
@@ -48,8 +51,8 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 
 (Noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere AUsbaustufen nach dem Hackathon beschrieben)  
 
-## Technische Voraussetzung
-### Komponenten
+# Technische Voraussetzung
+## Komponenten
 ### Client
 - mindestens zwei **Smartphones** (derzeit Android)
 - **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen).  
@@ -67,7 +70,7 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 - JSON  
 - Docker  
 
-## Datenschutz  
+# Datenschutz  
 
 Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und nutzt diese anonymisierte Information zum Abgleich der Daten von anderen Geräten.  
 
@@ -81,19 +84,46 @@ Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (
 
 Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anwender noch der Server-Betreiber eine Verbindung zwischen Gerät (entspricht in vielen Fällen dem Nutzer) und der verarbeiteten Kennung herstellen. Hinweis: Für einen produktiven Einsatz ist das Verschlüsselungsverfahren und die Verarbeitung zu prüfen und durch den Datenschutzbeauftragten zu bestätigen!  
 
-# Ausblick
+# Ausblick  
 
 Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werden. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagements der Teilnehmer beabsichtigt. Eine Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiterentwicklungen im Rahmen von Pull Requests.  
 
-## nicht implementierte Funktionen
+# nicht implementierte Funktionen  
 - Löschen von Kennungen inklusive Synchronsiation umsetzen  
 - Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten  
 - ...
 
+# Deine Mitwirkung  
+
+Bitte lese [CONTRIBUTING.md](CONTRIBUTING.md) für Einzelheiten über unseren Verhaltenskodex und das Verfahren zur Einreichung von Pull-Anfragen an uns.
+
+# Versionierung  
+
+Wir nutzen [SemVer](http://semver.org/) für die Vergabe von Versionsnummern. Für die verfügbaren Versionen schaue bitte [Tags für dieses Repository](https://github.com/generaliinformatik/mycoradar/tags). 
+
+# Authoren
+* **Sarah** - *Orga, Marketing, Video, Landingpage* - tba
+* **Desiree** - *Frontend* - tba
+* **Marianne** - *Backend* - tba
+* **Iris** - *Konzeption, Test* - tba
+* **Anna** - *UX, Marketing, Landingpage* - tba
+* **René** - *Github Admin, Video, Kommuniktions-Host* - [rfuehrer](https://github.com/rfuehrfer)
+* **Michael** - *Frontend* - tba
+* **Niko** - *Backend* - tba
+* **Oliver** - *Backend* - tba
+* **Claus** - *Konzeption, Feedback* - tba
+* **Stephan** - *Konzeption, Marketing, Feedback* - tba
+* **Stefan** - *Konzeption, Pitch, Feedback* - tba
+* **Björn** - *KOnzeption, Feedback* - tba
+
+Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliinformatik/mycoradar/contributors), die an dem Projekt bisher mitgewirkt haben.
+
 # Lizenz
 
-Unter der Open Source-Lizenz MIT veröffentlicht.
+Dieses Projekt ist unter  MIT Lizenz lizensiert - schaue bitte in die [LICENSE.md](LICENSE.md) für mehr Details.
 
 Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menscheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.  
 
-Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in unseren Upstream.  
+Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in diesen Upstream.  
+
+# Bemerkungen
