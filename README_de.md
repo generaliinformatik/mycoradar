@@ -1,4 +1,5 @@
 # my co:radar
+
 my co:radar - anonym. solidarisch. sicher.
 
 <img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>

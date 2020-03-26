@@ -1,4 +1,5 @@
 # my co:radar
+
 anonymous. solidary. safe.
 
 <img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
@@ -130,11 +131,10 @@ See also the list of [contributors](https://github.com/generaliinformatik/mycora
 
 This project is licensed under a WITH license - please see [LICENSE.md](LICENSE.md) for more details.
 
-Note: For us there is no question that we publish the result of a hackathon under an open source license MIT. We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please ** support this project** and participate in its further development.
+Note: For us there is no question that we publish the result of a hackathon under an open source license MIT. We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please **support this project** and participate in its further development.
 
 A support can be done as an own development, but we ask for a development via a fork using branches and pull requests into this upstream.
 
 ## Remarks
 
 tba
-
