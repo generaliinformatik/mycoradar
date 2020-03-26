@@ -33,7 +33,7 @@ Hinweis: Sollte ein zuvor positiv getesteter Anwender wieder genesen, kann der S
 
 # Technische Umsetzung  
 
-Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden ermittelt und als anonyme Kennzeichnung lokal gespeichert.  
+Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden über Bluetooth ermittelt und als anonyme Kennzeichnung lokal gespeichert.  
 
 Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.  
 
