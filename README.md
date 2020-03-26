@@ -1,131 +1,140 @@
-
-
-![logo_small](docs/images/logo_small.png)
-
-**NOTE** This page is currently only in German language, as the hackathon #WirVsVirus is an event of the German government. A translation into English is planned.
-
 # my co:radar
-anonym. solidarisch. sicher.
+anonymous. solidary. safe.
 
-Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
+<img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
 
-# Entwicklungsstand (development status)
-Prototyp, Alpha
+[Deutsch](README_de.md)
 
-## Zweck
-Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt, die bei der Eindämmung der Krankheit COVID-19 unterstützt.  
+An innovative solution for the solidary protection of our community from COVID-19. Anonymous use guaranteed and safe for your health.
 
-Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform unter den Aspekten des Datenschutzes (GDPR/EU-DSGVO).  
+## Development status
 
-# Unsere Idee
-Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein Anwender gemäß den Richtwerten des [Robert-Koch-Instituts (RKI)](https://www.rki.de/) zu lange und zu dicht bei einer mit SARS-CoV-2 infizierten Person aufgehalten hat.  
+Prototype, Alpha
 
-Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:  
+## Purpose
 
-- mindestens zwei Meter Abstand zu anderen Personen halten und   
-- nicht länger als 15 Minuten in der Nähe von infizierten Personen aufhalten.  
+As part of the Hackathon #WirVsVirus in 2020, this solution was developed to help control the disease COVID-19.
 
-Ansonsten könnte die Möglichkeit einer Ansteckung für den Anwender bestehen.  
+The solution helps users to keep track of their physical contacts and to inform themselves and others in time in case of an infection with COVID-19. The goal is to interrupt the chain of infection at an early stage and reduce the spread of SARS-CoV-2 so that the healthcare systems can withstand the collapse. The use of this solution complies with the aspects of European data protection (GDPR/EU-DSGVO).
 
-Hinweis: Sollte ein zuvor positiv getesteter Anwender wieder genesen, kann der Status durch den Benutzer wieder zurückgesetzt werden, so dass keine fehlerhafte Benachrichtigung zu späteren Zeitpunkten erfolgt.  
+## Our idea
+
+Our solution uses unique identifiers from smartphones to determine whether a user has spent too long and too close to a person infected with SARS-CoV-2 according to the guidelines of the [Robert Koch Institute (RKI)](https://www.rki.de/).  
+
+For this purpose, the solution checks the following conditions according to the recommendation:  
+
+- keep a distance of **at least two metres** to other people    and
+- do not stay near infected persons for more than **15 minutes**.
+
+Otherwise there is a possibility of infection for the user.
+
+Note: If a previously positive tested user recovers, the status can be reset by the user, so that no incorrect notification is sent at a later time.
 
 ![risk](docs/images/contactrisk.png)
 
-# Technische Umsetzung  
+## Technical implementation
 
-Mit der von uns vorgesehenen Lösung werden von dem eigenen Gerät alle Geräte in der Umgebung protokolliert. Die IDs werden über Bluetooth ermittelt und als anonyme Kennzeichnung lokal gespeichert.  
+With the solution we provide, all devices in the environment are logged by the own device. The IDs are determined via Bluetooth and stored locally as anonymous identification.
 
-Von einem zentralen Server-Dienst werden Geräte-IDs von positiv getesteten Nutzern gelesen und der Anwender wird vor einer potentiellen Ansteckung gewarnt, um so die Infektionskette zu unterbrechen.  
+From a central server service, device IDs of positively tested users are read and the user is warned of a potential infection, thus breaking the chain of infection.
 
-Wird eine ID erst zu einem späteren Zeitpunkt als infektiös markiert, werden alle früher mit dieser ID in Kontakt stehenden Anwender informiert. Diese Information erfolgt durch eine client-seitige Synchronisierung der Liste mit der als infektiös bekannten IDs.  
+If an ID is only marked as infectious at a later date, all users previously in contact with this ID are informed. This information is provided by client-side synchronization of the list with the IDs known to be infectious.
 
-![Architektur](docs/images/architecture.png)
+[Architecture](docs/images/architecture.png)
 
-Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übertragen und alle mit ihm in Kontakt gestandenen Anwender über den zuvor beschriebenen Mechanismus informiert.  
+If a user reports himself as infectious, his ID (only this information!) is transmitted to the server and all users in contact with him are informed via the mechanism described above.
 
-# Implementierte Features
-- Erfassung einer eindeutigen anonymen ID des Geräts  
-- keine Erfassung von personengebundenen Informationen  
-- Übertragung der Informationen über verschlüsselte Protokolle (in Arbeit)  
+## Implemented features
+
+- Acquisition of a unique anonymous ID of the device
+- No collection of personal information
+- Transmission of information via encrypted protocols (in progress)
 - ...  
 
-(Noch nicht implementierte Features werden im Abschnitt "Ausblick" für weitere Ausbaustufen nach dem Hackathon beschrieben)  
+(Features not yet implemented will be described in the "Perspectives" section for further expansion stages after the hackathon)
 
-# Technische Voraussetzung
-## Komponenten
-### Client
-- mindestens zwei **Smartphones** (derzeit [Android](https://www.android.com/))
-- **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen).  
+## Technical requirements
 
-### Server  
-- Server per Internet erreichbar  
+### Components
+
+#### Client
+
+- at least two **smartphones** (currently [Android](https://www.android.com/))
+- **Use of the "my co:radar "** application on the affected devices (recording of device IDs is possible with one device, but recording and evaluation of a status change only makes sense with a second device - without having to intervene in the data management)
+- **activated Bluetooth** (on all devices)
+
+#### Server
+
+- Server accessible via Internet  
 - [Docker](https://www.docker.com)  
-- Einsatz der **Backend-Komponente** für den Austausch der als infektiös identifizierten Anwender (Docker Image)  
-- **Internet-Verbindung** zur Datensynchronisierung  
+- Use of the **backend component** for the exchange of users identified as infectious (see Docker mage)  
+- **Internet connection** for data synchronization
 
-### Programmiersprachen, Frameworks etc.  
-- [Angular](https://angular.io)  
-- [Springboot](https://spring.io/)  
-- REST  
-- [JSON](https://www.json.org/)  
-- [Docker](https://www.docker.com)  
+#### Programming languages, frameworks etc.
 
-# Datenschutz  
+- [Angular](https://angular.io)
+- [Springboat](https://spring.io/)
+- REST
+- [JSON](https://www.json.org/)
+- [Docker](https://www.docker.com)
 
-Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und nutzt diese anonymisierte Information zum Abgleich der Daten von anderen Geräten.  
+## Privacy
 
-Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen(!!!)**, werden **anonymisiert verarbeitet und lokal gespeichert**.  
+The solution determines a unique ID of the device via Bluetooth (BLE), **anonymizes** it and uses this anonymized information to match data from other devices.
 
-In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermitteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**  
+The data is processed primarily on the user's **local device**. All device IDs identified in the user's environment, **which meet the conditions for a potential infection(!!!)**, are processed **anonymized and stored locally**.
 
-Die Speicherung von Geräte-IDs auf dem lokalen Gerät ist auf **maximal 20 Tage** (angenommene Inkubationszeit plus Karenz) begrenzt. Eine erneute Begegnung unter den Bedingungen setzt den Zeitstempel auf das aktuelle Begegnungsdatum zurück.  
+A synchronization with the server component takes place at regular intervals to determine a list of (also anonymized) device IDs. The IDs are identifiers of devices whose users have tested positive. If a **match can be found between this list and the locally stored data, the user is shown a message with recommendations for action**. There is **no display of device IDs or the location of third-party devices!
 
-Wird der Status eines anderen Anwenders von vormals "infektiös" auf "genesen" (nicht mehr infektiös) geändert, wird der **Eintrag in der zentralen Datenhaltung bei der nächsten Synchronisierung entfernt**. Dieser Status wird beim nächsten Abgleich der Geräte lokal aktualisiert, eine erneute Benachrichtigung wird damit unterbunden.  
+The storage of device IDs on the local device is limited to a **maximum of 20 days** (assumed incubation period plus grace period). A new encounter under these conditions resets the time stamp to the current encounter date.
 
-Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anwender noch der Server-Betreiber eine Verbindung zwischen Gerät (entspricht in vielen Fällen dem Nutzer) und der verarbeiteten Kennung herstellen. Hinweis: Für einen produktiven Einsatz ist das Verschlüsselungsverfahren und die Verarbeitung zu prüfen und durch den Datenschutzbeauftragten zu bestätigen!  
+If the status of another user is changed from previously "infectious" to "recovered" (aka no longer infectious), the **entry in the central data storage is removed during the next synchronization**. This status will be updated locally the next time the devices are synchronized, thus preventing a new notification.
 
-# Ausblick  
+By processing the device IDs in anonymous form, neither the user nor the server operator can establish a connection between the device (in many cases corresponds to the user) and the processed ID. Note: For productive use, the encryption procedure and processing must be checked and confirmed by the data protection officer!
 
-Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werden. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagements der Teilnehmer beabsichtigt. Eine Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiterentwicklungen im Rahmen von Pull Requests.  
+## Perspectives
 
-# nicht implementierte Funktionen  
-- Löschen von Kennungen inklusive Synchronisiation umsetzen  
-- Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten  
-- ...
+The application was developed as a **prototype** within the Hackathon and published under a free license. The idea or the technical implementation approach can be used as desired. A further development after the Hackathon is intended in the context of the private commitment of the participants. Participation by third parties is welcome. We are happy about forks and further developments in the context of pull requests.
 
-# Deine Mitwirkung  
+## Not implemented features
 
-Bitte lese [CONTRIBUTING.md](CONTRIBUTING.md) für Einzelheiten über unseren Verhaltenskodex und das Verfahren zur Einreichung von Pull-Anfragen an uns.
+Have a look at our issue board: [is:issue is:open label:feature](https://github.com/generaliinformatik/mycoradar/issues?q=is%3Aissue+is%3Aclosed++label%3Afeature)
 
-# Versionierung  
+## Your contribution
 
-Wir nutzen [SemVer](http://semver.org/) für die Vergabe von Versionsnummern. Für die verfügbaren Versionen schaue bitte [Tags für dieses Repository](https://github.com/generaliinformatik/mycoradar/tags). 
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details about our Code of Conduct and the process for submitting pull requests to us.
 
-# Authoren
-* **Sarah** - *Orga, Marketing, Video, Landingpage* - tba
-* **Desiree** - *Frontend* - tba
-* **Marianne** - *Backend* - tba
-* **Iris** - *Konzeption, Test* - tba
-* **Anna** - *UX, Marketing, Landingpage* - tba
-* **René** - *Github Admin, Video, Kommunikations-Host* - [rfuehrer](https://github.com/rfuehrfer)
-* **Michael** - *Frontend* - tba
-* **Niko** - *Backend* - tba
-* **Oliver** - *Backend* - tba
-* **Claus** - *Konzeption, Feedback* - tba
-* **Stephan** - *Konzeption, Marketing, Feedback* - tba
-* **Stefan** - *Konzeption, Pitch, Feedback* - tba
-* **Björn** - *Konzeption, Feedback* - tba
+## Versioning
 
-Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliinformatik/mycoradar/contributors), die an dem Projekt bisher mitgewirkt haben.
+We use [SemVer](http://semver.org/) for the assignment of version numbers. For the available versions please see [Tags for this repository](https://github.com/generaliinformatik/mycoradar/tags).
 
-# Lizenz
+## Authors
 
-Dieses Projekt ist unter MIT Lizenz lizensiert - schaue bitte in die [LICENSE.md](LICENSE.md) für mehr Details.
+- **Sarah** - *Orga, marketing, video, landing page* - tba
+- **Desiree** - **Frontend* - tba
+- **Marianne** - *Backend* - tba
+- **Iris** - *Conception, Test* - tba
+- **Anna** - *UX, Marketing, Landingpage* - tba
+- **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
+- **Michael** - *Frontend* - tba
+- **Niko** - *Baking* - tba
+- **Oliver** - *Baking* - tba
+- **Claus** - *Conception, feedback* - tba
+- **Stephan** - *Conception, Marketing, Feedback* - tba
+- **Stefan** - *Conception, pitch, feedback* - tba
+- **Björn** - *Conception, feedback* - tba
 
-Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menschheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.  
+See also the list of [contributors](https://github.com/generaliinformatik/mycoradar/contributors) who have been involved in the project so far.
 
-Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in diesen Upstream.  
+## License
 
-# Bemerkungen  
+This project is licensed under a WITH license - please see [LICENSE.md](LICENSE.md) for more details.
 
-tba...
+Note: For us there is no question that we publish the result of a hackathon under an open source license MIT. We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please ** support this project** and participate in its further development.
+
+A support can be done as an own development, but we ask for a development via a fork using branches and pull requests into this upstream.
+
+## Remarks
+
+tba
+
