@@ -20,9 +20,9 @@ The solution helps users to keep track of their physical contacts and to inform 
 
 ## Our idea
 
-Our solution uses unique identifiers from smartphones to determine whether a user has spent too long and too close to a person infected with SARS-CoV-2 according to the guidelines of the [Robert Koch Institute (RKI)](https://www.rki.de/).  
+Our solution uses unique identifiers from smartphones to determine whether a user has spent too long and too close to a person infected with SARS-CoV-2 according to the guidelines of the [Robert Koch Institute (RKI)](https://www.rki.de/).
 
-For this purpose, the solution checks the following conditions according to the recommendation:  
+For this purpose, the solution checks the following conditions according to the recommendation:
 
 - keep a distance of **at least two metres** to other people    and
 - do not stay near infected persons for more than **15 minutes**.
@@ -50,7 +50,7 @@ If a user reports himself as infectious, his ID (only this information!) is tran
 - Acquisition of a unique anonymous ID of the device
 - No collection of personal information
 - Transmission of information via encrypted protocols (in progress)
-- ...  
+- ...
 
 (Features not yet implemented will be described in the "Perspectives" section for further expansion stages after the hackathon)
 
@@ -66,9 +66,9 @@ If a user reports himself as infectious, his ID (only this information!) is tran
 
 #### Server
 
-- Server accessible via Internet  
-- [Docker](https://www.docker.com)  
-- Use of the **backend component** for the exchange of users identified as infectious (see Docker mage)  
+- Server accessible via Internet
+- [Docker](https://www.docker.com)
+- Use of the **backend component** for the exchange of users identified as infectious (see Docker mage)
 - **Internet connection** for data synchronization
 
 #### Programming languages, frameworks etc.
