@@ -112,18 +112,18 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 ## Authors
 
 - **Sarah** - *Orga, marketing, video, landing page* - tba
-- **Desiree** - **Frontend* - tba
+- **Desiree** - **Frontend* - [DeSy96](https://github.com/DeSy96)
 - **Marianne** - *Backend* - tba
 - **Iris** - *Conception, Test* - tba
 - **Anna** - *UX, Marketing, Landingpage* - tba
 - **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
-- **Michael** - *Frontend* - tba
-- **Niko** - *Backend* - tba
+- **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
+- **Niko** - *Backend* - [nikomall34](https://github.com/nikomall34)
 - **Oliver** - *Backend* - tba
 - **Claus** - *Conception, feedback* - tba
 - **Stephan** - *Conception, Marketing, Feedback* - tba
 - **Stefan** - *Conception, pitch, feedback* - tba
-- **Björn** - *Conception, feedback* - tba
+- **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)]
 
 See also the list of [contributors](https://github.com/generaliinformatik/mycoradar/contributors) who have been involved in the project so far.
 
