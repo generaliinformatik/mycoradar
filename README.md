@@ -14,7 +14,7 @@ Prototype, Alpha
 
 ## Purpose
 
-As part of the Hackathon #WirVsVirus in 2020, this solution was developed to help control the disease COVID-19.
+As part of the Hackathon [#WirVsVirus](https://wirvsvirushackathon.org) in 2020, this solution was developed to help control the disease COVID-19.
 
 The solution helps users to keep track of their physical contacts and to inform themselves and others in time in case of an infection with COVID-19. The goal is to interrupt the chain of infection at an early stage and reduce the spread of SARS-CoV-2 so that the healthcare systems can withstand the collapse. The use of this solution complies with the aspects of European data protection (GDPR/EU-DSGVO).
 
@@ -35,9 +35,9 @@ Note: If a previously positive tested user recovers, the status can be reset by 
 
 ## Technical implementation
 
-With the solution we provide, all devices in the environment are logged by the own device. The IDs are determined via Bluetooth and stored locally as anonymous identification.
+With the solution we provide, all devices in the environment are logged by your own device. The IDs are determined via Bluetooth and stored locally as anonymous identification.
 
-From a central server service, device IDs of positively tested users are read and the user is warned of a potential infection, thus breaking the chain of infection.
+From a central server, device IDs of positively tested users are read and the user is warned of a potential infection, thus breaking the chain of infection.
 
 If an ID is only marked as infectious at a later date, all users previously in contact with this ID are informed. This information is provided by client-side synchronization of the list with the IDs known to be infectious.
 
@@ -83,7 +83,7 @@ If a user reports himself as infectious, his ID (only this information!) is tran
 
 The solution determines a unique ID of the device via Bluetooth (BLE), **anonymizes** it and uses this anonymized information to match data from other devices.
 
-The data is processed primarily on the user's **local device**. All device IDs identified in the user's environment, **which meet the conditions for a potential infection(!!!)**, are processed **anonymized and stored locally**.
+The data is processed primarily on the user's **local device**. All device IDs identified in the user's environment, which meet the conditions for a **potential infection**, are processed **anonymized and stored locally**.
 
 A synchronization with the server component takes place at regular intervals to determine a list of (also anonymized) device IDs. The IDs are identifiers of devices whose users have tested positive. If a **match can be found between this list and the locally stored data, the user is shown a message with recommendations for action**. There is **no display of device IDs or the location of third-party devices!
 
@@ -95,7 +95,7 @@ By processing the device IDs in anonymous form, neither the user nor the server 
 
 ## Perspectives
 
-The application was developed as a **prototype** within the Hackathon and published under a free license. The idea or the technical implementation approach can be used as desired. A further development after the Hackathon is intended in the context of the private commitment of the participants. Participation by third parties is welcome. We are happy about forks and further developments in the context of pull requests.
+The application was developed as a **prototype** within the Hackathon and published under a free license. The idea or the technical implementation approach can be used as desired. A further development after the Hackathon is intended in the context of the private commitment of the participants. Participation by third parties is welcome. We gladly accept your contributions / pull requests.
 
 ## Not implemented features
 
@@ -118,8 +118,8 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 - **Anna** - *UX, Marketing, Landingpage* - tba
 - **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
 - **Michael** - *Frontend* - tba
-- **Niko** - *Baking* - tba
-- **Oliver** - *Baking* - tba
+- **Niko** - *Backend* - tba
+- **Oliver** - *Backend* - tba
 - **Claus** - *Conception, feedback* - tba
 - **Stephan** - *Conception, Marketing, Feedback* - tba
 - **Stefan** - *Conception, pitch, feedback* - tba
@@ -131,10 +131,9 @@ See also the list of [contributors](https://github.com/generaliinformatik/mycora
 
 This project is licensed under a WITH license - please see [LICENSE.md](LICENSE.md) for more details.
 
-Note: For us there is no question that we publish the result of a hackathon under an open source license MIT. We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please **support this project** and participate in its further development.
-
-A support can be done as an own development, but we ask for a development via a fork using branches and pull requests into this upstream.
+Note: We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please **support this project** and participate in its further development.
 
 ## Remarks
+
 
 tba
