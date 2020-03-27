@@ -4,15 +4,17 @@ my co:radar - anonym. solidarisch. sicher.
 
 <img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
 
+[English](README.md)
+
 Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
 
-## Entwicklungsstand (development status)
+## Entwicklungsstand
 
 Prototyp, Alpha
 
 ## Zweck
 
-Es wurde im Rahmen des Hackathon #WirVsVirus in 2020 eine Lösung entwickelt, die bei der Eindämmung der Krankheit COVID-19 unterstützt.
+Es wurde im Rahmen des Hackathon [#WirVsVirus](https://wirvsvirushackathon.org) in 2020 eine Lösung entwickelt, die bei der Eindämmung der Krankheit COVID-19 unterstützt.
 
 Die Lösung unterstützt Anwender dabei, ihre physischen Kontakte im Blick zu behalten und bei einer Infektion mit COVID-19 sich und andere rechtzeitig zu informieren. Ziel ist die frühzeitige Unterbrechung der Infektionskette und die Eindämmung der Verbreitung von SARS-CoV-2, damit unser Gesundheitssystem den Kollaps übersteht. Der Einsatz erfolgt dabei konform unter den Aspekten des Datenschutzes (GDPR/EU-DSGVO).
 
@@ -22,8 +24,8 @@ Unsere Lösung ermittelt über eindeutige Kennungen von Smartphones, ob sich ein
 
 Hierzu prüft die Lösung gemäß der Empfehlung folgende Bedingungen:
 
-- mindestens zwei Meter Abstand zu anderen Personen halten und
-- nicht länger als 15 Minuten in der Nähe von infizierten Personen aufhalten.
+- mindestens **zwei Meter** Abstand zu anderen Personen halten und
+- nicht länger als **15 Minuten** in der Nähe von infizierten Personen aufhalten.
 
 Ansonsten könnte die Möglichkeit einer Ansteckung für den Anwender bestehen.
 
@@ -59,7 +61,8 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 #### Client
 
 - mindestens zwei **Smartphones** (derzeit [Android](https://www.android.com/))
-- **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen).
+- **Einsatz der Anwendung "my co:radar"** auf den betroffenen Endgeräten (eine Erfassung der Geräte-IDs ist mit einem Endgerät möglich, jedoch ist die Erfassung und Auswertung einer Statusänderung nur mit einem zweiten Gerät sinnvoll - ohne in die Datenhaltung eingreifen zu müssen)
+- **aktiviertes Bluetooth** (auf allen beteiligten Geräten)
 
 #### Server
 
@@ -80,7 +83,7 @@ Meldet ein Anwender sich selber als infektiös, wird seine ID an den Server übe
 
 Die Lösung ermittelt eine eindeutige ID des Geräts, **anonymisiert** diese und nutzt diese anonymisierte Information zum Abgleich der Daten von anderen Geräten.
 
-Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen(!!!)**, werden **anonymisiert verarbeitet und lokal gespeichert**.
+Die Verarbeitung der Daten erfolgt vorrangig auf dem **lokalen Endgerät** des Benutzers. Alle im Umfeld des Benutzers identifizierten Geräte-IDs, **die den Bedingungen für eine potentielle Infektion entsprechen**, werden **anonymisiert verarbeitet und lokal gespeichert**.
 
 In regelmäßigen Abständen erfolgt eine Synchronisierung mit der Server-Komponente, um eine Liste mit (ebenfalls anonymisierten) Geräte-IDs zu ermitteln. Bei den IDs handelt es sich um Kennungen von Geräten, deren Benutzer positiv getestet worden sind. Kann zwischen dieser Liste und den lokal gespeicherten Daten eine **Übereinstimmung gefunden werden, wird dem Anwender eine Hinweismeldung mit Handlungsempfehlungen angezeigt**. Es erfolgt **keine Anzeige von Geräten-IDs oder dem Standort von Geräten Dritter!**
 
@@ -110,19 +113,19 @@ Wir nutzen [SemVer](http://semver.org/) für die Vergabe von Versionsnummern. F�
 
 ## Autoren
 
-- **Sarah** - *Orga, Marketing, Video, Landingpage* - tba
-- **Desiree** - *Frontend* - [DeSy96](https://github.com/DeSy96)
-- **Marianne** - *Backend* - tba
-- **Iris** - *Konzeption, Test* - tba
 - **Anna** - *UX, Marketing, Landingpage* - tba
-- **René** - *Github Admin, Video, Kommunikations-Host* - [rfuehrer](https://github.com/rfuehrfer)
+- **Björn** - *Konzeption, Feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
+- **Claus** - *Konzeption, Feedback* - tba
+- **Desiree** - *Frontend* - [DeSy96](https://github.com/DeSy96)
+- **Iris** - *Konzeption, Test* - tba
+- **Marianne** - *Backend* - tba
 - **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
 - **Niko** - *Backend* - [nikomall34](https://github.com/nikomall34)
 - **Oliver** - *Backend* - tba
-- **Claus** - *Konzeption, Feedback* - tba
-- **Stephan** - *Konzeption, Marketing, Feedback* - tba
+- **René** - *Github Admin, Video, Kommunikations-Host* - [rfuehrer](https://github.com/rfuehrfer)
+- **Sarah** - *Orga, Marketing, Video, Landingpage* - tba
 - **Stefan** - *Konzeption, Pitch, Feedback* - tba
-- **Björn** - *Konzeption, Feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
+- **Stephan** - *Konzeption, Marketing, Feedback* - tba
 
 Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliinformatik/mycoradar/contributors), die an dem Projekt bisher mitgewirkt haben.
 
@@ -130,7 +133,7 @@ Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliin
 
 Dieses Projekt ist unter MIT Lizenz lizensiert - schaue bitte in die [LICENSE.md](LICENSE.md) für mehr Details.
 
-Bemerkung: Für uns steht es außer Frage, dass wir das Ergebnis eines Hackathons unter einer Open Source-Lizenz MIT veröffentlichen. Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menschheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.
+Bemerkung: Wir möchten mit der Bereitstellung helfen, diese Pandemie als Menschheit **gemeinsam** zu bekämpfen. Eine gemeinsame Entwicklung von geeigneten Mitteln darf nicht in der Hand einzelner oder weniger liegen. Bitte **unterstützt dieses Projekt** und beteiligt Euch an einer Weiterentwicklung.
 
 Eine Unterstützung kann als eigene Entwicklung erfolgen, dennoch bitten wir um eine Entwicklung über einen Fork mittels Branches und Pull Requests in diesen Upstream.
 

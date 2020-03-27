@@ -1,6 +1,6 @@
 # my co:radar
 
-anonymous. solidary. safe.
+my co:radar - anonymous. solidary. safe.
 
 <img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
 
@@ -41,7 +41,7 @@ From a central server, device IDs of positively tested users are read and the us
 
 If an ID is only marked as infectious at a later date, all users previously in contact with this ID are informed. This information is provided by client-side synchronization of the list with the IDs known to be infectious.
 
-[Architecture](docs/images/architecture.png)
+![Architecture](docs/images/architecture.png)
 
 If a user reports himself as infectious, his ID (only this information!) is transmitted to the server and all users in contact with him are informed via the mechanism described above.
 
@@ -85,7 +85,7 @@ The solution determines a unique ID of the device via Bluetooth (BLE), **anonymi
 
 The data is processed primarily on the user's **local device**. All device IDs identified in the user's environment, which meet the conditions for a **potential infection**, are processed **anonymized and stored locally**.
 
-A synchronization with the server component takes place at regular intervals to determine a list of (also anonymized) device IDs. The IDs are identifiers of devices whose users have tested positive. If a **match can be found between this list and the locally stored data, the user is shown a message with recommendations for action**. There is **no display of device IDs or the location of third-party devices!
+A synchronization with the server component takes place at regular intervals to determine a list of (also anonymized) device IDs. The IDs are identifiers of devices whose users have tested positive. If a **match can be found between this list and the locally stored data, the user is shown a message with recommendations for action**. There is **no display of device IDs or the location of third-party devices!**
 
 The storage of device IDs on the local device is limited to a **maximum of 20 days** (assumed incubation period plus grace period). A new encounter under these conditions resets the time stamp to the current encounter date.
 
@@ -111,19 +111,19 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 
 ## Authors
 
-- **Sarah** - *Orga, marketing, video, landing page* - tba
-- **Desiree** - **Frontend* - [DeSy96](https://github.com/DeSy96)
-- **Marianne** - *Backend* - tba
-- **Iris** - *Conception, Test* - tba
 - **Anna** - *UX, Marketing, Landingpage* - tba
-- **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
+- **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
+- **Claus** - *Conception, feedback* - tba
+- **Desiree** - **Frontend* - [DeSy96](https://github.com/DeSy96)
+- **Iris** - *Conception, Test* - tba
+- **Marianne** - *Backend* - tba
 - **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
 - **Niko** - *Backend* - [nikomall34](https://github.com/nikomall34)
 - **Oliver** - *Backend* - tba
-- **Claus** - *Conception, feedback* - tba
-- **Stephan** - *Conception, Marketing, Feedback* - tba
+- **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
+- **Sarah** - *Orga, marketing, video, landing page* - tba
 - **Stefan** - *Conception, pitch, feedback* - tba
-- **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
+- **Stephan** - *Conception, Marketing, Feedback* - tba
 
 See also the list of [contributors](https://github.com/generaliinformatik/mycoradar/contributors) who have been involved in the project so far.
 
