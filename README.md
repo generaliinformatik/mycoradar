@@ -129,7 +129,7 @@ See also the list of [contributors](https://github.com/generaliinformatik/mycora
 
 ## License
 
-This project is licensed under a WITH license - please see [LICENSE.md](LICENSE.md) for more details.
+This project is licensed under a MIT license - please see [LICENSE.md](LICENSE.md) for more details.
 
 Note: We want to help fight this pandemic as humanity **together** by making it available. Joint development of appropriate means must not be in the hands of individuals or less. Please **support this project** and participate in its further development.
 
