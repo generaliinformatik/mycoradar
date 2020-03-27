@@ -111,18 +111,18 @@ Wir nutzen [SemVer](http://semver.org/) für die Vergabe von Versionsnummern. F�
 ## Autoren
 
 - **Sarah** - *Orga, Marketing, Video, Landingpage* - tba
-- **Desiree** - *Frontend* - tba
+- **Desiree** - *Frontend* - [DeSy96](https://github.com/DeSy96)
 - **Marianne** - *Backend* - tba
 - **Iris** - *Konzeption, Test* - tba
 - **Anna** - *UX, Marketing, Landingpage* - tba
 - **René** - *Github Admin, Video, Kommunikations-Host* - [rfuehrer](https://github.com/rfuehrfer)
-- **Michael** - *Frontend* - tba
-- **Niko** - *Backend* - tba
+- **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
+- **Niko** - *Backend* - [nikomall34](https://github.com/nikomall34)
 - **Oliver** - *Backend* - tba
 - **Claus** - *Konzeption, Feedback* - tba
 - **Stephan** - *Konzeption, Marketing, Feedback* - tba
 - **Stefan** - *Konzeption, Pitch, Feedback* - tba
-- **Björn** - *Konzeption, Feedback* - tba
+- **Björn** - *Konzeption, Feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
 
 Schaue auch gerne auf die Liste der [Mitwirkenden](https://github.com/generaliinformatik/mycoradar/contributors), die an dem Projekt bisher mitgewirkt haben.
 

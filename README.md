@@ -123,7 +123,7 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 - **Claus** - *Conception, feedback* - tba
 - **Stephan** - *Conception, Marketing, Feedback* - tba
 - **Stefan** - *Conception, pitch, feedback* - tba
-- **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)]
+- **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
 
 See also the list of [contributors](https://github.com/generaliinformatik/mycoradar/contributors) who have been involved in the project so far.
 
