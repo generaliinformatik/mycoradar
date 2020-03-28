@@ -4,7 +4,7 @@ my co:radar - anonym. solidarisch. sicher.
 
 <img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
 
-[English](README.md)
+[🇬🇧 English translation](README.md)
 
 Eine innovative Lösung für den solidarischen Schutz unserer Gemeinschaft. Anonyme Nutzung sichergestellt und sicher für Deine Gesundheit.
 
