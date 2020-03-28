@@ -2,7 +2,7 @@
 
 my co:radar - anonym. solidarisch. sicher.
 
-<img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small.png" alt="logo_small" width="100%"/>
+<img src="https://github.com/generaliinformatik/mycoradar/raw/master/docs/images/logo_small_de.png" alt="logo_small" width="100%"/>
 
 [🇬🇧 English translation](README.md)
 
