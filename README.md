@@ -114,7 +114,7 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 - **Anna** - *UX, Marketing, Landingpage* - tba
 - **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
 - **Claus** - *Conception, feedback* - tba
-- **Desiree** - **Frontend* - [DeSy96](https://github.com/DeSy96)
+- **Desiree** - *Frontend* - [DeSy96](https://github.com/DeSy96)
 - **Iris** - *Conception, Test* - tba
 - **Marianne** - *Backend* - tba
 - **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
