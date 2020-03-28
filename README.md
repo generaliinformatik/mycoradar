@@ -97,9 +97,9 @@ By processing the device IDs in anonymous form, neither the user nor the server 
 
 The application was developed as a **prototype** within the Hackathon and published under a free license. The idea or the technical implementation approach can be used as desired. A further development after the Hackathon is intended in the context of the private commitment of the participants. Participation by third parties is welcome. We gladly accept your contributions / pull requests.
 
-## Not implemented features
+## Future features
 
-Have a look at our issue board: [is:issue is:open label:feature](https://github.com/generaliinformatik/mycoradar/issues?q=is%3Aissue+is%3Aclosed++label%3Afeature)
+Have a look at our [issue board](https://github.com/generaliinformatik/mycoradar/issues?q=is%3Aissue+-label%3Abug+-label%3Aduplicate+-label%3A%22good+first+issue%22+-label%3A%22help+wanted%22+-label%3Ainvalid+-label%3Aquestion+-label%3Awontfix+-label%3Agenerali+-label%3Adocumentation+-label%3Awebsite).
 
 ## Your contribution
 

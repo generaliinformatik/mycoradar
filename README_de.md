@@ -97,11 +97,9 @@ Durch die Verarbeitung der Geräte-IDs in anonymisierter Form kann weder der Anw
 
 Die Anwendung ist als Prototyp im Rahmen des Hackathon entstanden und unter einer freien Lizenz veröffentlicht. Die Idee bzw. der technische Implementierungsansatz kann beliebig verwendet werden. Eine Weiterentwicklung nach dem Hackathon ist im Rahmen des privaten Engagements der Teilnehmer beabsichtigt. Eine Mitwirkung durch Dritte ist willkommen. Wir freuen uns über Forks und Weiterentwicklungen im Rahmen von Pull Requests.
 
-## nicht implementierte Funktionen
+## Zukünftige Funktionen
 
-- Löschen von Kennungen inklusive Synchronisiation umsetzen
-- Prüfung der Verschlüsselung und der Verarbeitung durch den Datenschutzbeauftragten
-- ...
+Die Liste der offenen (und bereits geschlossenen) Anforderungen sind auf dem [Issue Board](https://github.com/generaliinformatik/mycoradar/issues?q=is%3Aissue+-label%3Abug+-label%3Aduplicate+-label%3A%22good+first+issue%22+-label%3A%22help+wanted%22+-label%3Ainvalid+-label%3Aquestion+-label%3Awontfix+-label%3Agenerali+-label%3Adocumentation+-label%3Awebsite) zu finden.
 
 ## Deine Mitwirkung
 
