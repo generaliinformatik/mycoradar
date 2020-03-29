@@ -74,7 +74,7 @@ If a user reports himself as infectious, his ID (only this information!) is tran
 #### Programming languages, frameworks etc.
 
 - [Angular](https://angular.io)
-- [Springboat](https://spring.io/)
+- [Springboot](https://spring.io/)
 - REST
 - [JSON](https://www.json.org/)
 - [Docker](https://www.docker.com)
