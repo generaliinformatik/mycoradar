@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2020-03-23T06:26:34.542Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="-P7J5eRDzWmUbKcKHrWS" version="12.8.8" type="github">
+  <diagram id="3X_4UmJ7VgGxksfQTvtl" name="Page-1">
+    <mxGraphModel dx="801" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WDY6RfteRM52l8OYWPYD-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/wlan-connect-wifi-signal-wireless-internet-128.png;rotation=-90;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="155.5" y="140" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-2" value="" style="shape=mxgraph.signs.people.man_1;html=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="37" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/wlan-connect-wifi-signal-wireless-internet-128.png;rotation=90;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="231.5" y="140" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-4" value="" style="shape=mxgraph.signs.people.man_1;html=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="390" y="30" width="37" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-5" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/essential-web-4/50/cellphone-button-simple-phone-mobile-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="427" y="20" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-6" value="" style="shape=mxgraph.signs.people.man_1;html=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="250" width="37" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-7" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/essential-web-4/50/cellphone-button-simple-phone-mobile-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="567" y="240" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-8" value="" style="shape=mxgraph.signs.people.man_1;html=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="37" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-9" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/communication-icons-10/750/Untitled-1-07-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WDY6RfteRM52l8OYWPYD-10" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/kitchen-appliances-computers-and-electronics/32/Appliances-06-128.png;fontColor=#E6E6E6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="230" width="70" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
