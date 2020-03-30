@@ -20,11 +20,11 @@ export class RecommendationPage implements OnInit {
         const alert = await this.alertController.create({
             header: 'Hinweis',
             subHeader: '',
-            message: 'Wenn Sie sich aktuell schwer krank fühlen und oder direkt Kontakt zu einer positiv\n' +
-                '        getesteten Person hatten, kontaktieren Sie bitte Ihren Hausarzt, ein Testzentrum oder eine Hotline, wie die der\n' +
-                '        Kassenärztlichen Vereinigung oder des Gesundheitsamtes (wichtig: die telefonische Voranmeldung) und schildern\n' +
-                '        Sie die Symptome und besprechen Sie das weitere Vorgehen.\n' +
-                '    ',
+            message: 'Wenn Sie sich aktuell schwer krank fühlen und oder direkt Kontakt zu ' +
+                'einer positiv getesteten Person hatten, kontaktieren Sie bitte Ihren Hausarzt, ' +
+                'ein Testzentrum oder eine Hotline, wie die der Kassenärztlichen Vereinigung oder des Gesundheitsamtes ' +
+                '(wichtig: die telefonische Voranmeldung) und schildern ' +
+                'Sie die Symptome und besprechen Sie das weitere Vorgehen.',
             buttons: ['Verstanden']
         });
         await alert.present();

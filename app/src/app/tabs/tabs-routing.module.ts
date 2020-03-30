@@ -10,12 +10,12 @@ const routes: Routes = [
                 {
                     path: 'more',
                     loadChildren: () =>
-                        import('../Home/home.module').then(m => m.HomeModule)
+                        import('../more/more.module').then(m => m.MoreModule)
                 },
                 {
                     path: 'recommendation',
                     loadChildren: () =>
-                        import('../Recommendation/recommendation.module').then(m => m.RecommendationModule)
+                        import('../recommendation/recommendation.module').then(m => m.RecommendationModule)
                 },
                 {
                     path: 'profile',

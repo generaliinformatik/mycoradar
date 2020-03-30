@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ApiConfiguration {
-  rootUrl: string = '//ec2co-ecsel-1csbqjzp0mf6r-1878008528.eu-central-1.elb.amazonaws.com:8080';
+  rootUrl: string = 'http://ec2co-ecsel-1csbqjzp0mf6r-1878008528.eu-central-1.elb.amazonaws.com:8080';
 }
 
 export interface ApiConfigurationInterface {

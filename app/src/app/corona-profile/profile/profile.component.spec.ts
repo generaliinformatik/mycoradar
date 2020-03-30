@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { EingabeComponent } from './eingabe.component';
+import { EingabeComponent } from './profile.component';
 
 describe('EingabeComponent', () => {
   let component: EingabeComponent;

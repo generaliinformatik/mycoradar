@@ -1,44 +1,39 @@
-import {Component, OnInit} from '@angular/core';
-import {BluetoothLE, ScanStatus, Device} from '@ionic-native/bluetooth-le/ngx';
+import {Injectable} from '@angular/core';
+import {
+    AdvertisingParams,
+    BluetoothLE,
+    Device,
+    InitParams,
+    InitPeripheralParams, ScanParams,
+    ScanStatus
+} from '@ionic-native/bluetooth-le/ngx';
 import {Platform} from '@ionic/angular';
-import {DatabaseService} from '../../shared/services/database-service/database-service';
-import {Device as AppDevice} from '@ionic-native/device/ngx';
+import {DatabaseService} from '../database-service/database-service';
 import {UniqueDeviceID} from '@ionic-native/unique-device-id/ngx';
 
-@Component({
-    selector: 'app-profile',
-    templateUrl: './eingabe.component.html',
-    styleUrls: ['./eingabe.component.scss']
+@Injectable({
+    providedIn: 'root'
 })
-
-export class ProfileComponent implements OnInit {
+export class BluetoothService {
     UUID_SERVICE = '1842';
 
-    private handeltAdresses = new Array();
+    private handeltAdresses: Array<string> = [];
     private sendAdvertising: boolean;
     private processesScan: boolean;
     private uuid: string;
 
-    constructor(public bluetoothle: BluetoothLE, public plt: Platform, private databaseService: DatabaseService, private uuidService: UniqueDeviceID) {
+    constructor(public bluetoothle: BluetoothLE, public plt: Platform,
+                private databaseService: DatabaseService,
+                private uuidService: UniqueDeviceID) {
+    }
+
+    public startBluetoothService() {
         this.uuidService.get().then(res => this.uuid = res.toString());
-        this.plt.ready().then((readySource) => {
-            let params = {
-                'request': true,
-                'statusReceiver': true,
-                'restoreKey': 'bluetoothleplugin'
-            };
-            this.bluetoothle.initialize(params).subscribe(result => this.initBLE(result), error => this.handelError(error));
-        });
-
+        this.bluetoothle.initialize().subscribe(result => this.initBLE(result), error => this.handelError(error));
     }
-
-    ngOnInit(): void {
-
-    }
-
 
     public initBLE(result) {
-        if (result.status == 'enabled') {
+        if (result.status === 'enabled') {
             console.log('Info: BLE-Modem is ready!');
             this.sendAdvertising = true;
             this.processesScan = true;
@@ -51,9 +46,8 @@ export class ProfileComponent implements OnInit {
     }
 
     public initBeacon() {
-        let params = {
-            'request': true,
-            'restoreKey': 'bluetoothleplugin'
+        const params: InitPeripheralParams = {
+            request: true
         };
         this.bluetoothle.initializePeripheral(params).subscribe(result => this.initHandleBeacon(result), error => this.handelError(error));
     }
@@ -77,7 +71,7 @@ export class ProfileComponent implements OnInit {
 
     public createService() {
         console.log('Creating Service');
-        let params = {
+        this.bluetoothle.addService({
             service: this.UUID_SERVICE,
             characteristics: [
                 {
@@ -95,8 +89,7 @@ export class ProfileComponent implements OnInit {
                     }
                 }
             ]
-        };
-        this.bluetoothle.addService(params).then(result => this.startAdvertising(result)).catch(error => console.log('Error by AddService', error));
+        }).then(result => this.startAdvertising(result)).catch(error => console.log('Error by AddService', error));
     }
 
     public startAdvertising(result) {
@@ -105,20 +98,22 @@ export class ProfileComponent implements OnInit {
     }
 
     public advertise() {
-        let params = {
-            services: [this.UUID_SERVICE], //iOS
-            service: this.UUID_SERVICE, //Android
+        const params: AdvertisingParams = {
+            services: [this.UUID_SERVICE], // iOS
+            service: this.UUID_SERVICE, // Android
             name: 'COVID19-Radar',
             timeout: 30000
         };
         if (this.sendAdvertising) {
-            this.bluetoothle.startAdvertising(params).then(res => console.log('Start Advertising', res)).catch(err => console.log('err beim advertising', err));
+            this.bluetoothle.startAdvertising(params)
+                .then(res => console.log('Start Advertising', res))
+                .catch(err => console.log('err beim advertising', err));
         }
     }
 
     public startScan() {
-        let params = {
-            'allowDuplicates': true,
+        const params: ScanParams = {
+            allowDuplicates: true,
         };
         this.bluetoothle.startScan(params).subscribe(result => this.handelScan(result), error => this.handelError(error));
     }
@@ -128,7 +123,7 @@ export class ProfileComponent implements OnInit {
         if (result.status === 'scanStarted') {
             console.log('Info: Scanning for Devices!');
         } else if (result.status === 'scanResult' && this.processesScan && result.rssi < -50) {
-            if (this.handeltAdresses.indexOf(result.address) == -1) {
+            if (this.handeltAdresses.indexOf(result.address) === -1) {
                 console.log('Info: New Device ->' + result.address);
                 this.sendAdvertising = false;
                 this.processesScan = false;
@@ -139,11 +134,9 @@ export class ProfileComponent implements OnInit {
     }
 
     public connectToDevice(res) {
-        let params =
-            {
-                'address': res.address
-            };
-        this.bluetoothle.connect(params).subscribe(result => this.onConnect(res), error => this.handelError(error));
+        this.bluetoothle.connect({
+            address: res.address
+        }).subscribe(result => this.onConnect(res), error => this.handelError(error));
     }
 
     public onConnect(res) {
@@ -153,7 +146,7 @@ export class ProfileComponent implements OnInit {
 
     public onDisconver(res: Device) {
         console.log('Discover -->' + JSON.stringify(res));
-        let params = {address: res.address, service: this.UUID_SERVICE, characteristic: this.uuid};
+        const params = {address: res.address, service: this.UUID_SERVICE, characteristic: this.uuid};
         if (res.services.find(serv => serv.uuid === this.UUID_SERVICE) === undefined) {
             this.handeltAdresses.push(res.address);
             this.bluetoothle.disconnect(params).then(resultDis => {

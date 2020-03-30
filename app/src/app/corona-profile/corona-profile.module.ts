@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {CalendarModule} from 'ion2-calendar';
-import {ProfileComponent} from './eingabe/eingabe.component';
+import {ProfileComponent} from './profile/profile.component';
 import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
