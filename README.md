@@ -111,19 +111,19 @@ We use [SemVer](http://semver.org/) for the assignment of version numbers. For t
 
 ## Authors
 
-- **Anna** - *UX, Marketing, Landingpage* - tba
+- **Anna** - *UX, Marketing, Landingpage* - [mcdoubleju](https://github.com/mcdoubleju)
 - **Björn** - *Conception, feedback* - [BjoernSchotte](https://github.com/BjoernSchotte)
-- **Claus** - *Conception, feedback* - tba
+- **Claus** - *Conception, feedback* - n/a
 - **Desiree** - *Frontend* - [DeSy96](https://github.com/DeSy96)
-- **Iris** - *Conception, Test* - tba
-- **Marianne** - *Backend* - tba
+- **Iris** - *Conception, Test* - n/a
+- **Marianne** - *Backend* - n/a
 - **Michael** - *Frontend* - [workminimizer-michael](https://github.com/workminimizer-michael)
 - **Niko** - *Backend* - [nikomall34](https://github.com/nikomall34)
-- **Oliver** - *Backend* - tba
+- **Oliver** - *Backend* - [Olli-27](https://github.com/Olli-27)
 - **René** - *Github Admin, Video, Communications Host* - [rfuehrer](https://github.com/rfuehrfer)
-- **Sarah** - *Orga, marketing, video, landing page* - tba
-- **Stefan** - *Conception, pitch, feedback* - tba
-- **Stephan** - *Conception, Marketing, Feedback* - tba
+- **Sarah** - *Orga, marketing, video, landing page* - n/a
+- **Stefan** - *Conception, pitch, feedback* - n/a
+- **Stephan** - *Conception, Marketing, Feedback* - [stweiss01](https://github.com/stweiss01)
 
 See also the list of [contributors](https://github.com/generaliinformatik/mycoradar/contributors) who have been involved in the project so far.
 
