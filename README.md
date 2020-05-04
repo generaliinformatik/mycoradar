@@ -12,6 +12,16 @@ An innovative solution for the solidary protection of our community from COVID-1
 
 Prototype, Alpha
 
+> ### ℹ️ We are no longer working on this project.
+>
+> Participating in the #WirVsVirus hackathon was an important and fun experience for us, but we're not going to take it any further:
+>
+>- None of the ideas from the "tracking app" category made the cut.
+>
+>- A European initiative to create a tracking app was announced right after the hackathon.
+>
+>- We're lucky that our day jobs aren't impacted by Corona (besides having to work from home), but that also means we don't have the time to push our idea through by ourselves.
+
 ## Purpose
 
 As part of the Hackathon [#WirVsVirus](https://wirvsvirushackathon.org) in 2020, this solution was developed to help control the disease COVID-19.
